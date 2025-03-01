@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+
+<title>Indonesia!</title>
+<link type="text/css" rel="stylesheet" href="css/style-index.css"/>
+	<head>
+	<nav>
+	<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sosbud.html">Culture</a></li>
+        <li><a href="sejindo.html">History</a></li>
+    </ul>
+	</nav>
+	<style>
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #ff5733; /* Red background color */
+    display: flex;
+    justify-content: space-around; 
+    border-radius: 15px; 
+  }
+
+  li {
+    text-align: center; /* Centers the text in each link */
+    flex: 1; /* Ensures equal width for each item */
+  }
+
+  a {
+    display: block;
+    padding: 10px 15px;
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-family: Arial, sans-serif; /* Optional font styling */
+    font-size: 18px; /* Optional font size */
+  }
+
+  a:hover {
+    background-color: #c44525; /* Darker red on hover */
+    border-radius: 15px; /* Keeps the hover effect rounded */
+  }
+
+  .specialText {
+      color: red;
+      font-size: larger;
+  }
+
+  .attPageLayoutGrid {
+        display: grid;
+        grid-column-gap: 0.5em;
+        grid-row-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "agArticle agAside1"
+        "agArticle agAside2"
+        "agArticle . ";
+    }
+
+    .attGridArticle {
+        grid-area: agArticle;
+    }
+    .attGridAside1 {
+        grid-area: agAside1;
+        color: white;
+        border: dotted 1px purple;
+        background-color: #27ba69;
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+    .attGridAside2 {
+        grid-area: agAside2;
+        color: white;
+        border: dotted 1px purple;
+        background-color: #27ba69;
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    article h1 {
+        font-size: 32px;
+    }
+
+    .absPos {
+        position: absolute;
+    }
+
+    .relPos {
+        position: relative;
+        margin-right:  -310px;
+    }
+
+    #photoBox {
+        width: 800px;
+        height: 400px;
+        padding-left: 50px;
+    }
+
+    #img1 { 
+        width: 120px; 
+        top: 200px; 
+        left: 390px; 
+        z-index: 10; 
+    } 
+
+    #img2 { 
+        width: 200px; 
+        top: 100px; 
+        left: 20px; 
+        z-index: 8; 
+    } 
+    
+    #img3 { 
+        width: 150px; 
+        top: 250px; 
+        left: 10px; 
+        z-index: 5; 
+    } 
+    
+    #img4 { 
+        width: 110px; 
+        top: 65px; 
+        left: 205px; 
+        z-index: 9; 
+    } 
+
+    #img5 { 
+        width: 250px; 
+        top: 210px; 
+        left: 160px; 
+        z-index: 7; 
+    } 
+    
+    #img6 { 
+        width: 180px; 
+        top: 90px; 
+        left: 310px; 
+        z-index: 6; 
+    } 
+
+    #photoText { 
+        font-family: "brush script MT"; 
+        color: lightgreen; 
+        font-size: 4em; 
+        left: 35px; 
+        top: 15px; 
+        z-index: 20;
+    }
+
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    }
+
+  </style>
+<br>
+<br>
+<br>
+</head>
+<body id="frontPage">
+<main class="attPageLayoutGrid">
+<article class="attGridArticle">
+<h1>Welcome to Indonesia! The Beautiful land of the Tropics!</h1> 
+		<p>
+			<em> This website </em> is about <strong>Indonesia!</strong> A country that is located in South East Asia. <br>
+			Indonesia is a vast and diverse Southeast Asian archipelago comprising over 17,000 islands, including Java, Sumatra, Borneo (Kalimantan), Sulawesi, and Papua. 
+			Known for its rich cultural heritage, Indonesia is home to hundreds of ethnic groups, languages, and traditions. 
+			The nation boasts breathtaking natural landscapes, from tropical beaches and volcanoes to dense rainforests and coral reefs. 
+			As the world's fourth most populous country, Indonesia has a vibrant economy and is a global leader in commodities like palm oil and natural gas. 
+			Its capital, Jakarta, is a bustling metropolis, while Bali attracts millions with its stunning scenery and spiritual culture.<br>
+			<div class="container">
+                <div class="top-elements">
+                    <img  class= "titoPicture" src="gambar/Flag_of_Indonesia.jpg" alt="Flag of Indonesia" width=349px height= 200px>
+                    <iframe class= "titoPicture" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32659971.34122361!2d95.94222542858361!3d-2.224028654161148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sid!2sid!4v1734147701555!5m2!1sid!2sid" width="349" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="photoBox" class="relPos">
+                    <img id="img4" class="absPos" src="gambar/indo1.jpg" />
+                    <img id="img2" class="absPos" src="gambar/indo2.jpg"/>
+                    <img id="img3" class="absPos" src="gambar/indo3.jpg" />
+                    <img id="img1" class="absPos" src="gambar/indo4.jpg"/>
+                    <img id="img5" class="absPos" src="gambar/indo5.jpg" />
+                    <img id="img6" class="absPos" src="gambar/indo6.jpg"/>
+                    <p id="photoText" class="absPos">Indonesia!<p>
+                </div>
+            </div>
+            <br>
+</article>
+  <aside class="attGridAside1">
+      <h2>Getting around</h2>
+      <h3>Urban</h3>
+      <p>You can get around Jakarta by using trains (MRT, LRT, or KAI), buses (Transjakarta), angkots (Jaklingko).
+      But, my personal recommendation is renting a motorcycle, for the real experience of Jakarta. </p>
+      <h3>Rural</h3>
+      <p>In the countryside, I recommend using either a car or motorcycle, maybe even a becak.</p>
+    </aside>
+    <aside class="attGridAside2">
+      <h2>Weather</h2>
+      <p>The weather in Indonesia is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+  </aside>
+</main>
+</body>
+</html>	
